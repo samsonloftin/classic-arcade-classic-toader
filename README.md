@@ -19,4 +19,4 @@ In this classic arcade clone of Frogger, players must cross the bug-infested pat
 - [ ] Create new assets
 
 ## Contributing
-The [original repository](https://github.com/udacity/frontend-nanodegree-arcade-game) is starter code for _all_ Udacity students. This was a project built by the team at Udacity for the [Front-End Web Development Nanodegree](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001) course.
+The [original repository](https://github.com/udacity/frontend-nanodegree-arcade-game) is starter code for _all_ Udacity students. The original project was built by the team at Udacity for the [Front-End Web Development Nanodegree](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001) course.

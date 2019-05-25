@@ -1,3 +1,50 @@
 body {
     text-align: center;
 }
+
+@keyframes opening {
+	from {transform:translateY(-310px);}
+	to {transform:translateY(0);}
+}
+
+@-webkit-keyframes opening {
+	from {transform:translateY(-310px);}
+	to {transform:translateY(0);}
+}
+
+p {
+	justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    line-height: .2;
+}
+
+#winner, #start {
+	z-index: 1;
+	display: flex;
+	overflow: hidden;
+	position: absolute;
+	flex-direction: column;
+	justify-content: space-evenly;
+	top: 240px;
+	left: 350px;
+	width: 275px;
+	height: 125px;
+	background-color: rgba(94, 145, 85, .7);
+	animation-name: opening;
+	animation-duration: 1s;
+	color: white;
+	text-transform: uppercase;
+	font-family: 'Baloo Bhai', cursive;
+}
+
+.title {
+	font-size: 2em;
+	font-weight: 400;
+};
+
+.subtitle {
+	font-size: 1.2em;
+	font-weight: 250;
+};

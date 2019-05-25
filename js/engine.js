@@ -34,7 +34,7 @@ var Engine = (function(global) {
     function main() {
         /* Get our time delta information which is required if your game
          * requires smooth animation. Because everyone's computer processes
-         * instructions at different speeds we need a constant value that
+		 * instructions at different speeds we need a constant value that
          * would be the same for everyone (regardless of how fast their
          * computer is) - hurray time!
          */
@@ -83,17 +83,17 @@ var Engine = (function(global) {
     }
 
     /* This is called by the update function and loops through all of the
-     * objects within your allEnemies array as defined in app.js and calls
+     * objects within your appGame.allEnemies array as defined in app.js and calls
      * their update() methods. It will then call the update function for your
      * player object. These update methods should focus purely on updating
      * the data/properties related to the object. Do your drawing in your
      * render methods.
      */
     function updateEntities(dt) {
-        allEnemies.forEach(function(enemy) {
+        appGame.allEnemies.forEach(function(enemy) {
             enemy.update(dt);
         });
-        player.update();
+        appGame.playerOne.update();
     }
 
     /* This function initially draws the "game level", it will then call
@@ -146,14 +146,14 @@ var Engine = (function(global) {
      * on your enemy and player entities within app.js
      */
     function renderEntities() {
-        /* Loop through all of the objects within the allEnemies array and call
+        /* Loop through all of the objects within the appGame.allEnemies array and call
          * the render function you have defined.
          */
-        allEnemies.forEach(function(enemy) {
+        appGame.allEnemies.forEach(function(enemy) {
             enemy.render();
         });
 
-        player.render();
+        appGame.playerOne.render();
     }
 
     /* This function does nothing but it could have been a good place to
@@ -173,7 +173,8 @@ var Engine = (function(global) {
         'images/water-block.png',
         'images/grass-block.png',
         'images/enemy-bug.png',
-        'images/char-boy.png'
+        'images/char-boy.png',
+        'images/char-cat-girl.png'
     ]);
     Resources.onReady(init);
 

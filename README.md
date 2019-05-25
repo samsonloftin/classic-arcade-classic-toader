@@ -1,20 +1,22 @@
-# Classic Arcade Game Clone Project
+# Classic Arcade Classic, Toader
+In this classic arcade clone of Frogger, players must cross the bug-infested pathways to the nice cool refreshing coast on the other side of the level. This project was built in JavaScript using ES6 Object-Oriented Programming!
 
-## Table of Contents
-
-- [Instructions](#instructions)
-- [Contributing](#contributing)
+## Play Now
+[Play Now](https://samsonloftin.github.io/classic-arcade-classic-toader/)
 
 ## Instructions
+**Arrow Keys** for movement <br>
+**Spacebar** to Start/Continue
 
-Use this [rubric](https://review.udacity.com/#!/rubrics/15/view) for self-checking your submission.
-
-Make sure the functions you write are **object-oriented** - either class functions (like `Player` and `Enemy`) or class prototype functions such as `Enemy.prototype.checkCollisions`. Also make sure that the keyword `this` is used appropriately within your class and class prototype functions to refer to the object the function is called upon.
-
-Your **README.md** file should be updated with instructions on both how to 1. Run and 2. Play your arcade game.
-
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+## Future Updates
+- [ ] Difficulty Selector
+- [ ] Start Menu
+- [ ] Character Selector
+- [ ] Character Bonuses
+- [ ] 5 Levels
+- [ ] Different Enemy Types
+- [ ] Create custom ES6 game engine
+- [ ] Create new assets
 
 ## Contributing
-
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+The [original repository](https://github.com/udacity/frontend-nanodegree-arcade-game) is starter code for _all_ Udacity students. This was a project built by the team at Udacity for the [Front-End Web Development Nanodegree](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001) course.

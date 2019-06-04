@@ -96,6 +96,7 @@ let appGame = (function () {
 			if (this.y == -38) {
 				this.y += 83;
 				cssDomCreator.winningMessage();
+				wrapper = document.getElementById("wrapper");
 				messageBox = document.getElementById("winner");
 
 				// removes player from the field
@@ -112,8 +113,8 @@ let appGame = (function () {
 		
 		resetGame() {
 			// Checks if Start or Winner message is in the DOM
-			if (messageBody.contains(messageBox)) {
-				messageBody.removeChild(messageBox);
+			if (wrapper.contains(messageBox)) {
+				document.body.removeChild(wrapper);
 				
 				// resets player location
 				this.x = 202;
@@ -130,6 +131,7 @@ let appGame = (function () {
 		gameStart() {
 			// Displays the game start modal
 			cssDomCreator.startMessage();
+			wrapper = document.getElementById("wrapper");
 			messageBox = document.getElementById("start");
 		}
 	};
@@ -155,7 +157,7 @@ let appGame = (function () {
 	
 	// Message Box
 	let messageBox;
-	let messageBody = document.body;
+	let wrapper;
 
 	// This listens for key presses and sends the keys to your
 	document.addEventListener("keyup", function(e) {

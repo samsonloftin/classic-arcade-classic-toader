@@ -1,4 +1,7 @@
+html,
 body {
+	margin: 0;
+	padding: 0;
     text-align: center;
 }
 
@@ -20,15 +23,25 @@ p {
     line-height: .2;
 }
 
-#winner, #start {
+#wrapper {
+	width: 100%;
+	margin-top: 235px;
+	display: flex;
+	overflow: hidden;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	position: absolute;
+}
+
+#winner, 
+#start {
 	z-index: 1;
 	display: flex;
 	overflow: hidden;
-	position: absolute;
 	flex-direction: column;
 	justify-content: space-evenly;
-	top: 240px;
-	left: 350px;
 	width: 275px;
 	height: 125px;
 	background-color: rgba(94, 145, 85, .7);
@@ -42,9 +55,9 @@ p {
 .title {
 	font-size: 2em;
 	font-weight: 400;
-};
+}
 
 .subtitle {
 	font-size: 1.2em;
 	font-weight: 250;
-};
+}

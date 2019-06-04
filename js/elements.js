@@ -3,6 +3,11 @@
 
 let cssDomCreator = (function () {	
 	let winningMessage = (function () {
+		let canvas = document.querySelector("canvas");
+
+		let wrapper = document.createElement("div");
+		wrapper.setAttribute("id", "wrapper");
+
 		let messageBox = document.createElement("div");
 		messageBox.setAttribute("id", "winner");
 		
@@ -15,11 +20,15 @@ let cssDomCreator = (function () {
 		winningTextInput.setAttribute("class", "subtitle");
 		winningTextInput.innerHTML = "(Spacebar to Restart!)";
 		messageBox.appendChild(winningTextInput);
-	
-		document.body.appendChild(messageBox);
+
+		wrapper.appendChild(messageBox);
+		document.body.insertBefore(wrapper, document.body.childNodes[0]);
 	});
 	
 	let startMessage = (function () {
+		let wrapper = document.createElement("div");
+		wrapper.setAttribute("id", "wrapper");
+
 		let messageBox = document.createElement("div");
 		messageBox.setAttribute("id", "start");
 		
@@ -33,7 +42,8 @@ let cssDomCreator = (function () {
 		startTextInput.innerHTML = "(Spacebar to Start!)";
 		messageBox.appendChild(startTextInput);
 		
-		document.body.appendChild(messageBox);
+		wrapper.appendChild(messageBox);
+		document.body.appendChild(wrapper);
 	});
 	
 	return {
